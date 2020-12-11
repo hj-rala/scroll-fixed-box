@@ -1,0 +1,15 @@
+<div id="sidebox"> 내용 입력 </div>
+
+
+
+
+var currentPosition = parseInt($("#sidebox").css("top"));
+$(window).scroll(function() { 
+	var position = $(window).scrollTop(); 
+	$("#sidebox").stop().animate({"top":position+currentPosition+"px"},1000); 
+});
+
+
+
+
+#sidebox { background-color:#F0F0F0; position:absolute; width:120px; top:200px; right:420px; padding: 3px 10px }
